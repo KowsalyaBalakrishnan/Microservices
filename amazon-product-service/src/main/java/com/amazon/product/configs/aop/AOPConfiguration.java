@@ -24,7 +24,10 @@ public class AOPConfiguration {
 
         long startTime = System.currentTimeMillis();
         Object result = proceedingJoinPoint.proceed();
-        log.info("Result Received! Method => " + proceedingJoinPoint.getSignature() + " took => " + (System.currentTimeMillis() - startTime));
+        log.info("Total Time =>" +
+                " Method Execution => " +
+                proceedingJoinPoint.getSignature() +
+                " took => " + (System.currentTimeMillis() - startTime));
         return result;
     }
 }

@@ -3,8 +3,8 @@ package com.amazon.product.controller;
 import com.amazon.product.configs.aop.ProductLogger;
 import com.amazon.product.configs.properties.ApplicationProperties;
 import com.amazon.product.dto.ProductCreationResponseDTO;
-import com.amazon.product.dto.ProductRequestDTO;
-import com.amazon.product.dto.ProductRetrievalDTO;
+import com.amazon.product.dto.ProductRequest;
+import com.amazon.product.dto.ProductResponse;
 import com.amazon.product.enums.PersistenceStatus;
 import com.amazon.product.service.ProductService;
 
@@ -17,8 +17,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/amazon/v1")
@@ -34,7 +34,7 @@ public class ProductController {
 
     @PostMapping("/products")
     @ProductLogger
-    public ResponseEntity<ProductCreationResponseDTO> addProduct(@RequestBody ProductRequestDTO productRequest) {
+    public ResponseEntity<ProductCreationResponseDTO> addProduct(@RequestBody ProductRequest productRequest) {
         ProductCreationResponseDTO addedProduct = productService.addProduct(productRequest);
         HttpStatus httpStatus = addedProduct.getStatus().equals(PersistenceStatus.CREATED) ? HttpStatus.CREATED :
                 HttpStatus.INTERNAL_SERVER_ERROR;
@@ -43,18 +43,19 @@ public class ProductController {
 
     @GetMapping("/products")
     @ProductLogger
-    public ResponseEntity<List<ProductRetrievalDTO>> getProducts(HttpServletRequest request) throws Exception {
-        log.info("Hitting products service!");
-        log.info("Added ThreadContextID as request attribute => {}", request.getAttribute("threadContextId").toString());
-        List<ProductRetrievalDTO> products = productService.getProducts();
+    public ResponseEntity<Map<String, Object>> getProducts(HttpServletRequest request,
+                                                             @RequestParam(defaultValue = "10") String countInEachPage,
+                                                             @RequestParam String pageNumber) {
+        log.info("ThreadContextID => {}", request.getAttribute("threadContextId").toString());
+        Map<String, Object> products = productService.getProducts(pageNumber, countInEachPage);
         return ResponseEntity.ok(products);
     }
 
     @GetMapping("/products/{id}")
     @ProductLogger
-    public ResponseEntity<ProductRetrievalDTO> getProduct(@PathVariable("id") int productId) {
-        ProductRetrievalDTO productDTO = productService.getProduct(productId);
-        HttpStatus httpStatus = productDTO.getName() != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+    public ResponseEntity<ProductResponse> getProduct(@PathVariable("id") int productId) {
+        ProductResponse productDTO = productService.getProduct(productId);
+        HttpStatus httpStatus = productDTO.getProduct() != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(productDTO, httpStatus);
     }
 
