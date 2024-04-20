@@ -3,6 +3,7 @@ package com.amazon.product.controller;
 import com.amazon.product.configs.aop.ProductLogger;
 import com.amazon.product.configs.properties.ApplicationProperties;
 import com.amazon.product.dto.ProductCreationResponseDTO;
+import com.amazon.product.dto.ProductPrice;
 import com.amazon.product.dto.ProductRequest;
 import com.amazon.product.dto.ProductResponse;
 import com.amazon.product.enums.PersistenceStatus;
@@ -63,5 +64,14 @@ public class ProductController {
     public void getEnvironment() {
         properties.printEnvironment();
     }
+
+    @GetMapping("/products/price")
+    @ProductLogger
+    public ResponseEntity<List<ProductPrice>> getProductsPrice(@RequestParam("pid") String productIds) {
+        log.info("Received Product IDs => {}", productIds);
+        List<ProductPrice> productPrice = productService.getProductsById(productIds);
+        return new ResponseEntity<>(productPrice, HttpStatus.OK);
+    }
+
 
 }

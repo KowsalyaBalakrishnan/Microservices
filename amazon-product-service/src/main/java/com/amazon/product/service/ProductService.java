@@ -2,6 +2,7 @@ package com.amazon.product.service;
 
 import com.amazon.product.database.ProductRepository;
 import com.amazon.product.dto.ProductCreationResponseDTO;
+import com.amazon.product.dto.ProductPrice;
 import com.amazon.product.dto.ProductRequest;
 import com.amazon.product.dto.ProductResponse;
 import com.amazon.product.entity.Product;
@@ -18,9 +19,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -97,5 +96,20 @@ public class ProductService {
                 .model(product.getModel())
                 .price(product.getPrice())
                 .build();
+    }
+
+    public List<ProductPrice> getProductsById(String productIds) {
+        List<ProductPrice> productPrices = new ArrayList<>();
+        String[] products = productIds.split(",");
+
+        List<Map<String, Object>> productsPrice = productRepository.getProductsPrice(products);
+
+        for (Map<String, Object> map : productsPrice) {
+            ProductPrice productPrice = new ProductPrice((Integer) map.get("productId"), (Double) map.get("productPrice"));
+            productPrices.add(productPrice);
+        }
+
+        log.info("Retrieved {} Products Price", productsPrice.size());
+        return productPrices;
     }
 }
