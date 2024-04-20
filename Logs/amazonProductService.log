@@ -1,0 +1,1075 @@
+18-Apr-2024 23:09:47,443 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 47478 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 18-Apr-2024 23:09:47,447 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 18-Apr-2024 23:09:47,721 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 18-Apr-2024 23:09:47,743 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+ 18-Apr-2024 23:09:48,075 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 18-Apr-2024 23:09:48,126 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 661 ms
+ 18-Apr-2024 23:09:48,206 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 18-Apr-2024 23:09:48,232 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 18-Apr-2024 23:09:48,318 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 18-Apr-2024 23:09:48,554 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 18-Apr-2024 23:09:48,868 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 18-Apr-2024 23:09:48,874 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 18-Apr-2024 23:09:49,089 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 18-Apr-2024 23:09:49,273 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 18-Apr-2024 23:09:49,278 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.125 seconds (JVM running for 2.499)
+ 18-Apr-2024 23:09:55,674 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 18-Apr-2024 23:09:55,675 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 18-Apr-2024 23:09:55,685 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 18-Apr-2024 23:09:55,697 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=21
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,698 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=25
+            THREAD_ID=[http-nio-8080-exec-1] ThreadContext is Initialized with => 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,701 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-1] Hitting products service!
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,703 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-1] Added ThreadContextID as request attribute => 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,703 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=21
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => List com.amazon.product.service.ProductService.getProducts()
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,703 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=25
+            THREAD_ID=[http-nio-8080-exec-1] ThreadContext is Initialized with => 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,705 IST LEVEL= INFO CLASS=ProductService METHOD=getProducts LINE=44
+            THREAD_ID=[http-nio-8080-exec-1] Fetching All the Products from database...
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,793 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=28
+            THREAD_ID=[http-nio-8080-exec-1] Result Received from List com.amazon.product.service.ProductService.getProducts()
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,795 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=28
+            THREAD_ID=[http-nio-8080-exec-1] Result Received from ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,820 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:09:55,820 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 767d36f5-bf10-4bfb-848f-7eb12ab9bf5b18-Apr-2024 23:10:13,311 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 18-Apr-2024 23:12:32,645 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 49403 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 18-Apr-2024 23:12:32,649 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 18-Apr-2024 23:12:32,931 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 18-Apr-2024 23:12:32,957 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+ 18-Apr-2024 23:12:33,318 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 18-Apr-2024 23:12:33,370 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 705 ms
+ 18-Apr-2024 23:12:33,459 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 18-Apr-2024 23:12:33,486 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 18-Apr-2024 23:12:33,575 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 18-Apr-2024 23:12:33,826 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 18-Apr-2024 23:12:34,134 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 18-Apr-2024 23:12:34,139 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 18-Apr-2024 23:12:34,346 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 18-Apr-2024 23:12:34,546 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 18-Apr-2024 23:12:34,552 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.183 seconds (JVM running for 2.552)
+ 18-Apr-2024 23:12:37,933 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 18-Apr-2024 23:12:37,934 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 18-Apr-2024 23:12:37,944 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 18-Apr-2024 23:12:37,956 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=21
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:37,960 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-1] Hitting products service!
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:37,961 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-1] Added ThreadContextID as request attribute => 8faf670b-9d3f-420a-88fa-da36305b1b14
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:37,962 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=21
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => List com.amazon.product.service.ProductService.getProducts()
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:37,964 IST LEVEL= INFO CLASS=ProductService METHOD=getProducts LINE=44
+            THREAD_ID=[http-nio-8080-exec-1] Fetching All the Products from database...
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:38,055 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=30
+            THREAD_ID=[http-nio-8080-exec-1] Result Received! Method => List com.amazon.product.service.ProductService.getProducts() took => 90
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:38,057 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=30
+            THREAD_ID=[http-nio-8080-exec-1] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 101
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:38,084 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:12:38,084 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 8faf670b-9d3f-420a-88fa-da36305b1b1418-Apr-2024 23:13:12,013 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 11:38:33,154 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 91174 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 11:38:33,157 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 11:38:33,467 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 11:38:33,498 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 11:38:33,858 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 11:38:33,915 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 740 ms
+ 19-Apr-2024 11:38:34,007 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 11:38:34,034 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 11:38:34,124 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 11:38:34,368 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 11:38:34,681 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 11:38:34,686 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 11:38:34,897 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 11:38:35,093 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 11:38:35,098 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.236 seconds (JVM running for 2.629)
+ 19-Apr-2024 11:38:58,986 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 11:38:58,988 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 11:38:58,998 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:38:59,010 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:38:59,013 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-1] Hitting products service!
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:38:59,015 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-1] Added ThreadContextID as request attribute => c8a78ab0-3af9-460e-aa6b-cb23e947c4f0
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:38:59,016 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => List com.amazon.product.service.ProductService.getProducts()
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:38:59,019 IST LEVEL= INFO CLASS=ProductService METHOD=getProducts LINE=46
+            THREAD_ID=[http-nio-8080-exec-1] Fetching All the Products from database...
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:39:01,160 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Result Received! Method => List com.amazon.product.service.ProductService.getProducts() took => 2141
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:39:01,164 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 2154
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:39:01,191 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:39:01,192 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ c8a78ab0-3af9-460e-aa6b-cb23e947c4f019-Apr-2024 11:39:16,633 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:39:16,635 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-2] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 23f41f35-0ab1-4183-84be-398b51df9c8f19-Apr-2024 11:39:16,636 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-2] Hitting products service!
+ 23f41f35-0ab1-4183-84be-398b51df9c8f19-Apr-2024 11:39:16,636 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-2] Added ThreadContextID as request attribute => 23f41f35-0ab1-4183-84be-398b51df9c8f
+ 23f41f35-0ab1-4183-84be-398b51df9c8f19-Apr-2024 11:39:16,644 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-2] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 9
+ 23f41f35-0ab1-4183-84be-398b51df9c8f19-Apr-2024 11:39:16,648 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ 23f41f35-0ab1-4183-84be-398b51df9c8f19-Apr-2024 11:39:16,648 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ 23f41f35-0ab1-4183-84be-398b51df9c8f19-Apr-2024 11:39:17,404 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:39:17,405 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-3] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 13bba58c-7605-460b-8175-8e8b1a8f46fa19-Apr-2024 11:39:17,406 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-3] Hitting products service!
+ 13bba58c-7605-460b-8175-8e8b1a8f46fa19-Apr-2024 11:39:17,406 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-3] Added ThreadContextID as request attribute => 13bba58c-7605-460b-8175-8e8b1a8f46fa
+ 13bba58c-7605-460b-8175-8e8b1a8f46fa19-Apr-2024 11:39:17,407 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-3] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 2
+ 13bba58c-7605-460b-8175-8e8b1a8f46fa19-Apr-2024 11:39:17,410 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ 13bba58c-7605-460b-8175-8e8b1a8f46fa19-Apr-2024 11:39:17,410 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ 13bba58c-7605-460b-8175-8e8b1a8f46fa19-Apr-2024 11:39:17,985 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:39:17,987 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-4] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 2d94fc9f-b224-4e55-9fed-6f4a8f66dac919-Apr-2024 11:39:17,987 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-4] Hitting products service!
+ 2d94fc9f-b224-4e55-9fed-6f4a8f66dac919-Apr-2024 11:39:17,987 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-4] Added ThreadContextID as request attribute => 2d94fc9f-b224-4e55-9fed-6f4a8f66dac9
+ 2d94fc9f-b224-4e55-9fed-6f4a8f66dac919-Apr-2024 11:39:17,988 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-4] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 1
+ 2d94fc9f-b224-4e55-9fed-6f4a8f66dac919-Apr-2024 11:39:17,992 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Controller Execution Completed
+ 2d94fc9f-b224-4e55-9fed-6f4a8f66dac919-Apr-2024 11:39:17,993 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Response Sent to Client
+ 2d94fc9f-b224-4e55-9fed-6f4a8f66dac919-Apr-2024 11:39:18,484 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:39:18,486 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-5] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ a667ac05-18c3-4336-9c8f-e78ea3fa5e0f19-Apr-2024 11:39:18,486 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-5] Hitting products service!
+ a667ac05-18c3-4336-9c8f-e78ea3fa5e0f19-Apr-2024 11:39:18,486 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-5] Added ThreadContextID as request attribute => a667ac05-18c3-4336-9c8f-e78ea3fa5e0f
+ a667ac05-18c3-4336-9c8f-e78ea3fa5e0f19-Apr-2024 11:39:18,487 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-5] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 1
+ a667ac05-18c3-4336-9c8f-e78ea3fa5e0f19-Apr-2024 11:39:18,490 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ a667ac05-18c3-4336-9c8f-e78ea3fa5e0f19-Apr-2024 11:39:18,491 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ a667ac05-18c3-4336-9c8f-e78ea3fa5e0f19-Apr-2024 11:39:18,970 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:39:18,971 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-6] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 375d6fab-bbd4-4f1e-846c-b31f60787fea19-Apr-2024 11:39:18,971 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-6] Hitting products service!
+ 375d6fab-bbd4-4f1e-846c-b31f60787fea19-Apr-2024 11:39:18,972 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-6] Added ThreadContextID as request attribute => 375d6fab-bbd4-4f1e-846c-b31f60787fea
+ 375d6fab-bbd4-4f1e-846c-b31f60787fea19-Apr-2024 11:39:18,972 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-6] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 1
+ 375d6fab-bbd4-4f1e-846c-b31f60787fea19-Apr-2024 11:39:18,978 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Controller Execution Completed
+ 375d6fab-bbd4-4f1e-846c-b31f60787fea19-Apr-2024 11:39:18,979 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Response Sent to Client
+ 375d6fab-bbd4-4f1e-846c-b31f60787fea19-Apr-2024 11:39:19,395 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:39:19,396 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-7] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 75429f68-e661-4b6e-9bfa-19a0dc85509919-Apr-2024 11:39:19,397 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-7] Hitting products service!
+ 75429f68-e661-4b6e-9bfa-19a0dc85509919-Apr-2024 11:39:19,397 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-7] Added ThreadContextID as request attribute => 75429f68-e661-4b6e-9bfa-19a0dc855099
+ 75429f68-e661-4b6e-9bfa-19a0dc85509919-Apr-2024 11:39:19,397 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-7] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 0
+ 75429f68-e661-4b6e-9bfa-19a0dc85509919-Apr-2024 11:39:19,402 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 75429f68-e661-4b6e-9bfa-19a0dc85509919-Apr-2024 11:39:19,402 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 75429f68-e661-4b6e-9bfa-19a0dc85509919-Apr-2024 11:39:54,243 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 11:39:57,384 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 91779 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 11:39:57,388 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 11:39:57,679 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 11:39:57,706 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 11:39:58,082 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 11:39:58,136 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 730 ms
+ 19-Apr-2024 11:39:58,226 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 11:39:58,251 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 11:39:58,336 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 11:39:58,590 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 11:39:58,891 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 11:39:58,896 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 11:39:59,125 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 11:39:59,339 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 11:39:59,344 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.244 seconds (JVM running for 2.616)
+ 19-Apr-2024 11:40:02,297 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 11:40:02,298 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 0 ms
+ 19-Apr-2024 11:40:02,308 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:40:02,319 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:02,323 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-1] Hitting products service!
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:02,324 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-1] Added ThreadContextID as request attribute => 92f8b39a-c5cc-4711-ab37-f04496d3b1a5
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:02,325 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => List com.amazon.product.service.ProductService.getProducts()
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:02,328 IST LEVEL= INFO CLASS=ProductService METHOD=getProducts LINE=46
+            THREAD_ID=[http-nio-8080-exec-1] Fetching All the Products from database...
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:04,472 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Result Received! Method => List com.amazon.product.service.ProductService.getProducts() took => 2143
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:04,475 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 2156
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:04,502 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:04,502 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 92f8b39a-c5cc-4711-ab37-f04496d3b1a519-Apr-2024 11:40:14,809 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:40:14,811 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-2] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ 62834d43-859a-49a0-8562-90d4b85abad519-Apr-2024 11:40:14,811 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-2] Hitting products service!
+ 62834d43-859a-49a0-8562-90d4b85abad519-Apr-2024 11:40:14,812 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-2] Added ThreadContextID as request attribute => 62834d43-859a-49a0-8562-90d4b85abad5
+ 62834d43-859a-49a0-8562-90d4b85abad519-Apr-2024 11:40:14,824 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-2] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 13
+ 62834d43-859a-49a0-8562-90d4b85abad519-Apr-2024 11:40:14,828 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ 62834d43-859a-49a0-8562-90d4b85abad519-Apr-2024 11:40:14,829 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ 62834d43-859a-49a0-8562-90d4b85abad519-Apr-2024 11:40:47,011 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 11:40:47,012 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-3] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest)
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:47,013 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=42
+            THREAD_ID=[http-nio-8080-exec-3] Hitting products service!
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:47,013 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=43
+            THREAD_ID=[http-nio-8080-exec-3] Added ThreadContextID as request attribute => bb4baa19-7f9c-475d-99c5-4d03605dcf86
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:47,013 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-3] Before Method Invocation => List com.amazon.product.service.ProductService.getProducts()
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:47,014 IST LEVEL= INFO CLASS=ProductService METHOD=getProducts LINE=46
+            THREAD_ID=[http-nio-8080-exec-3] Fetching All the Products from database...
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:49,039 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-3] Result Received! Method => List com.amazon.product.service.ProductService.getProducts() took => 2024
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:49,040 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-3] Result Received! Method => ResponseEntity com.amazon.product.controller.ProductController.getProducts(HttpServletRequest) took => 2027
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:49,045 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:40:49,047 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ bb4baa19-7f9c-475d-99c5-4d03605dcf8619-Apr-2024 11:41:39,517 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:11:42,147 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 13466 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 12:11:42,151 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 12:11:42,442 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 12:11:42,468 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 12:11:42,821 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 12:11:42,872 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 703 ms
+ 19-Apr-2024 12:11:42,961 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 12:11:42,991 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 12:11:43,081 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 12:11:43,325 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 12:11:43,631 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 12:11:43,636 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:11:43,844 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 12:11:44,041 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 12:11:44,046 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.176 seconds (JVM running for 2.557)
+ 19-Apr-2024 12:12:16,981 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 12:12:16,982 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 0 ms
+ 19-Apr-2024 12:12:16,991 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 12:12:17,012 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 25ed45b4-ab4c-45d1-9a6a-14e88e826e1c19-Apr-2024 12:12:17,013 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 25ed45b4-ab4c-45d1-9a6a-14e88e826e1c19-Apr-2024 12:12:31,748 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:12:33,717 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 13756 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 12:12:33,721 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 12:12:34,010 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 12:12:34,034 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 12:12:34,398 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 12:12:34,453 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 711 ms
+ 19-Apr-2024 12:12:34,544 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 12:12:34,570 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 12:12:34,665 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 12:12:34,908 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 12:12:35,218 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 12:12:35,223 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:12:35,448 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 12:12:35,659 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 12:12:35,664 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.225 seconds (JVM running for 2.596)
+ 19-Apr-2024 12:12:39,391 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 12:12:39,392 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 12:12:39,402 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 12:12:39,425 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 8f134eb7-f083-4ec1-a6cd-1dd53b60c05419-Apr-2024 12:12:39,426 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 8f134eb7-f083-4ec1-a6cd-1dd53b60c05419-Apr-2024 12:12:57,926 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:13:24,236 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 14135 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 12:13:24,240 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 12:13:24,520 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 12:13:24,543 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 12:13:24,927 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 12:13:24,983 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 727 ms
+ 19-Apr-2024 12:13:25,079 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 12:13:25,105 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 12:13:25,194 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 12:13:25,464 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 12:13:25,761 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 12:13:25,766 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:13:25,982 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 12:13:26,177 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 12:13:26,182 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.229 seconds (JVM running for 2.603)
+ 19-Apr-2024 12:13:28,742 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 12:13:28,743 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 12:13:28,752 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 12:13:28,773 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 86149717-a417-450f-be9b-b2f646bed5ef19-Apr-2024 12:13:28,773 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 86149717-a417-450f-be9b-b2f646bed5ef19-Apr-2024 12:13:39,823 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:13:41,757 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 14339 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 12:13:41,761 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 12:13:42,047 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 12:13:42,074 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 12:13:42,424 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 12:13:42,477 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 697 ms
+ 19-Apr-2024 12:13:42,564 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 12:13:42,587 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 12:13:42,680 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 12:13:42,925 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 12:13:43,226 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 12:13:43,230 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:13:43,456 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 12:13:43,663 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 12:13:43,669 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.183 seconds (JVM running for 2.546)
+ 19-Apr-2024 12:13:47,157 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 12:13:47,159 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 2 ms
+ 19-Apr-2024 12:13:47,170 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 12:13:47,190 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 9d981912-3b09-45a6-9c60-afbe5c8c0ecf19-Apr-2024 12:13:47,190 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 9d981912-3b09-45a6-9c60-afbe5c8c0ecf19-Apr-2024 12:14:05,022 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:14:06,397 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 14929 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 12:14:06,401 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=638
+            THREAD_ID=[main] The following 1 profile is active: "it"
+ 19-Apr-2024 12:14:06,687 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 12:14:06,716 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 12:14:07,088 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 12:14:07,145 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 727 ms
+ 19-Apr-2024 12:14:07,237 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 12:14:07,263 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 12:14:07,350 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 12:14:07,604 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 12:14:07,926 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 12:14:07,931 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 12:14:08,169 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 12:14:08,371 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 12:14:08,377 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.262 seconds (JVM running for 2.63)
+ 19-Apr-2024 12:14:10,348 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 12:14:10,349 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-2] Completed initialization in 0 ms
+ 19-Apr-2024 12:14:10,359 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 12:14:10,381 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ a80178ad-87ee-43f2-8c4a-22424d4f2aea19-Apr-2024 12:14:10,381 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ a80178ad-87ee-43f2-8c4a-22424d4f2aea19-Apr-2024 12:14:26,208 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:24:24,578 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 59340 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 13:24:24,583 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 13:24:24,906 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 13:24:24,937 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 13:24:25,293 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 13:24:25,351 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 746 ms
+ 19-Apr-2024 13:24:25,448 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 13:24:25,478 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 13:24:25,574 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 13:24:25,847 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 13:24:26,155 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 13:24:26,159 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:24:26,406 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 13:24:26,609 IST LEVEL= WARN CLASS=AbstractApplicationContext METHOD=refresh LINE=599
+            THREAD_ID=[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+ 19-Apr-2024 13:24:26,610 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[main] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:24:26,628 IST LEVEL= INFO CLASS=ConditionEvaluationReportLoggingListener METHOD=logMessage LINE=136
+            THREAD_ID=[main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 19-Apr-2024 13:24:26,639 IST LEVEL=ERROR CLASS=LoggingFailureAnalysisReporter METHOD=report LINE=40
+            THREAD_ID=[main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+ 19-Apr-2024 13:24:55,154 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 59665 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 13:24:55,158 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 13:24:55,407 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 13:24:55,429 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 13:24:55,753 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 13:24:55,801 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 628 ms
+ 19-Apr-2024 13:24:55,881 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 13:24:55,904 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 13:24:55,982 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 13:24:56,220 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 13:24:56,527 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 13:24:56,532 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:24:56,748 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 13:24:56,941 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 13:24:56,946 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.07 seconds (JVM running for 2.429)
+ 19-Apr-2024 13:25:02,967 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 13:25:02,968 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 13:25:02,977 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 13:25:02,999 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 4f18ec24-b4bd-43b1-8ab9-158ac68db41e19-Apr-2024 13:25:02,999 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 4f18ec24-b4bd-43b1-8ab9-158ac68db41e19-Apr-2024 13:25:11,837 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:29:04,070 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 61906 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 13:29:04,077 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 13:29:04,164 IST LEVEL= WARN CLASS=AbstractApplicationContext METHOD=refresh LINE=599
+            THREAD_ID=[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.amazon.product.AmazonProductServiceApplication]; nested exception is java.io.FileNotFoundException: /Users/c2220081/Documents/Microservices/Propertiesapplication.properties (No such file or directory)
+ 19-Apr-2024 13:29:04,179 IST LEVEL=ERROR CLASS=SpringApplication METHOD=reportFailure LINE=818
+            THREAD_ID=[main] Application run failed
+ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.amazon.product.AmazonProductServiceApplication]; nested exception is java.io.FileNotFoundException: /Users/c2220081/Documents/Microservices/Propertiesapplication.properties (No such file or directory)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:756) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:572) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.18.jar:2.7.18]
+	at com.amazon.product.AmazonProductServiceApplication.main(AmazonProductServiceApplication.java:11) ~[classes/:?]
+Caused by: java.io.FileNotFoundException: /Users/c2220081/Documents/Microservices/Propertiesapplication.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184) ~[?:?]
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:187) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:110) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:81) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:67) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:465) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:279) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-5.3.31.jar:5.3.31]
+	... 13 more
+19-Apr-2024 13:29:13,180 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 61995 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 13:29:13,183 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 13:29:13,469 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 13:29:13,493 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 13:29:13,860 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 13:29:13,913 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 709 ms
+ 19-Apr-2024 13:29:14,001 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 13:29:14,029 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 13:29:14,115 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 13:29:14,366 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 13:29:14,671 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 13:29:14,676 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:29:14,899 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 13:29:15,106 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 13:29:15,111 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.202 seconds (JVM running for 2.559)
+ 19-Apr-2024 13:29:19,935 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 13:29:19,936 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 0 ms
+ 19-Apr-2024 13:29:19,947 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 13:29:19,968 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 418970a8-2457-46e3-aea1-a20caddcbd4619-Apr-2024 13:29:19,968 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 418970a8-2457-46e3-aea1-a20caddcbd4619-Apr-2024 13:29:24,518 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:31:46,548 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 63311 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 13:31:46,552 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 13:31:46,847 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 13:31:46,876 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 13:31:47,230 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 13:31:47,285 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 712 ms
+ 19-Apr-2024 13:31:47,376 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 13:31:47,407 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 13:31:47,496 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 13:31:47,742 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 13:31:48,060 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 13:31:48,065 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 13:31:48,292 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 13:31:48,503 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 13:31:48,508 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.253 seconds (JVM running for 2.623)
+ 19-Apr-2024 13:31:52,827 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 13:31:52,829 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 13:31:52,840 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 13:31:52,860 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 1a58df7d-5079-4856-8d60-20f7c899d45019-Apr-2024 13:31:52,861 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 1a58df7d-5079-4856-8d60-20f7c899d45019-Apr-2024 13:31:58,373 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:00:35,078 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 81450 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 14:00:35,082 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 14:00:35,403 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 14:00:35,436 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 14:00:35,805 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 14:00:35,861 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 761 ms
+ 19-Apr-2024 14:00:35,950 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 14:00:35,981 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 14:00:36,072 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 14:00:36,328 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 14:00:36,659 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 14:00:36,665 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:00:36,885 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 14:00:37,078 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 14:00:37,083 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.302 seconds (JVM running for 2.696)
+ 19-Apr-2024 14:00:39,858 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 14:00:39,858 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 0 ms
+ 19-Apr-2024 14:00:39,866 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 14:00:39,884 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ facb4a65-1dc6-4ab9-a1b4-edead7e0deb819-Apr-2024 14:00:39,884 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ facb4a65-1dc6-4ab9-a1b4-edead7e0deb819-Apr-2024 14:00:44,774 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:04:21,160 IST LEVEL=ERROR CLASS=SpringApplication METHOD=reportFailure LINE=818
+            THREAD_ID=[main] Application run failed
+ java.lang.IllegalArgumentException: Circular placeholder reference 'spring.application.name' in property definitions
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:168) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:594) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.context.ContextIdApplicationContextInitializer.getApplicationId(ContextIdApplicationContextInitializer.java:68) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.ContextIdApplicationContextInitializer.getContextId(ContextIdApplicationContextInitializer.java:64) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.ContextIdApplicationContextInitializer.initialize(ContextIdApplicationContextInitializer.java:54) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:605) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:374) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.18.jar:2.7.18]
+	at com.amazon.product.AmazonProductServiceApplication.main(AmazonProductServiceApplication.java:11) ~[classes/:?]
+19-Apr-2024 14:07:24,059 IST LEVEL=ERROR CLASS=SpringApplication METHOD=reportFailure LINE=818
+            THREAD_ID=[main] Application run failed
+ java.lang.IllegalArgumentException: Could not resolve placeholder 'appName' in value "${appName}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:79) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:60) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:594) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.context.ContextIdApplicationContextInitializer.getApplicationId(ContextIdApplicationContextInitializer.java:68) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.ContextIdApplicationContextInitializer.getContextId(ContextIdApplicationContextInitializer.java:64) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.context.ContextIdApplicationContextInitializer.initialize(ContextIdApplicationContextInitializer.java:54) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:605) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:374) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.18.jar:2.7.18]
+	at com.amazon.product.AmazonProductServiceApplication.main(AmazonProductServiceApplication.java:11) ~[classes/:?]
+19-Apr-2024 14:08:31,225 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 98007 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 14:08:31,229 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 14:08:31,309 IST LEVEL= WARN CLASS=AbstractApplicationContext METHOD=refresh LINE=599
+            THREAD_ID=[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.amazon.product.AmazonProductServiceApplication]; nested exception is java.io.FileNotFoundException: /Users/c2220081/Documents/Microservices/Properties/application.properties (No such file or directory)
+ 19-Apr-2024 14:08:31,323 IST LEVEL=ERROR CLASS=SpringApplication METHOD=reportFailure LINE=818
+            THREAD_ID=[main] Application run failed
+ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.amazon.product.AmazonProductServiceApplication]; nested exception is java.io.FileNotFoundException: /Users/c2220081/Documents/Microservices/Properties/application.properties (No such file or directory)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:756) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:572) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) ~[spring-boot-2.7.18.jar:2.7.18]
+	at com.amazon.product.AmazonProductServiceApplication.main(AmazonProductServiceApplication.java:11) ~[classes/:?]
+Caused by: java.io.FileNotFoundException: /Users/c2220081/Documents/Microservices/Properties/application.properties (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184) ~[?:?]
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:187) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:110) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:81) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:67) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:465) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:279) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:303) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174) ~[spring-context-5.3.31.jar:5.3.31]
+	... 13 more
+19-Apr-2024 14:08:45,462 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 98028 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 14:08:45,466 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 14:08:45,766 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 14:08:45,793 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 14:08:46,171 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 14:08:46,229 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 744 ms
+ 19-Apr-2024 14:08:46,321 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 14:08:46,348 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 14:08:46,441 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 14:08:46,688 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 14:08:46,992 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 14:08:46,996 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:08:47,207 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 14:08:47,417 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 14:08:47,422 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.241 seconds (JVM running for 2.61)
+ 19-Apr-2024 14:08:51,170 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 14:08:51,171 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 14:08:51,178 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 14:08:51,197 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 721a5dc3-8add-42f0-87d3-89ed0119a9b319-Apr-2024 14:08:51,197 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 721a5dc3-8add-42f0-87d3-89ed0119a9b319-Apr-2024 14:12:28,744 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:12:30,698 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 1586 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 14:12:30,702 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 14:12:30,996 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 14:12:31,023 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 14:12:31,368 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 14:12:31,417 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 699 ms
+ 19-Apr-2024 14:12:31,504 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 14:12:31,530 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 14:12:31,614 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 14:12:31,852 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 14:12:32,154 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 14:12:32,160 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:12:32,388 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 14:12:32,584 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 14:12:32,589 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.171 seconds (JVM running for 2.55)
+ 19-Apr-2024 14:12:36,638 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 14:12:36,639 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 14:12:36,649 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 14:12:36,669 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ d37f11be-3dc1-4003-81f0-318c4c9cbdf219-Apr-2024 14:12:36,669 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ d37f11be-3dc1-4003-81f0-318c4c9cbdf219-Apr-2024 14:12:47,360 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:12:59,165 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 1906 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 14:12:59,169 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 14:12:59,477 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 14:12:59,508 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 14:12:59,891 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 14:12:59,945 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 759 ms
+ 19-Apr-2024 14:13:00,042 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 14:13:00,068 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 14:13:00,157 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 14:13:00,438 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 14:13:00,751 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 14:13:00,756 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:13:00,981 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 14:13:01,197 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 14:13:01,203 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.322 seconds (JVM running for 2.688)
+ 19-Apr-2024 14:13:03,454 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 14:13:03,456 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 2 ms
+ 19-Apr-2024 14:13:03,466 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 14:13:03,485 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 9081d58a-87d6-43f5-857e-c0e403aca44319-Apr-2024 14:13:03,486 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 9081d58a-87d6-43f5-857e-c0e403aca44319-Apr-2024 14:13:06,474 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:14:32,953 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 2205 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 19-Apr-2024 14:14:32,957 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 19-Apr-2024 14:14:33,239 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 19-Apr-2024 14:14:33,264 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+ 19-Apr-2024 14:14:33,603 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 19-Apr-2024 14:14:33,656 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 677 ms
+ 19-Apr-2024 14:14:33,744 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 19-Apr-2024 14:14:33,774 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 19-Apr-2024 14:14:33,866 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 19-Apr-2024 14:14:34,105 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 19-Apr-2024 14:14:34,409 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 19-Apr-2024 14:14:34,415 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 19-Apr-2024 14:14:34,616 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 19-Apr-2024 14:14:34,801 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 19-Apr-2024 14:14:34,806 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.133 seconds (JVM running for 2.487)
+ 19-Apr-2024 14:14:43,266 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 19-Apr-2024 14:14:43,267 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 19-Apr-2024 14:14:43,277 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 19-Apr-2024 14:14:43,296 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ f18620ef-26aa-402f-9b06-0062ff36a20e19-Apr-2024 14:14:43,297 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ f18620ef-26aa-402f-9b06-0062ff36a20e19-Apr-2024 14:14:47,173 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 

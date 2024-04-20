@@ -1,0 +1,13 @@
+18-Apr-2024 18:37:01,000 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 74200 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 
+            18-Apr-2024 18:37:01,004 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} No active profile set, falling back to 1 default profile: "default"
+ 
+            18-Apr-2024 18:37:02,652 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} Started AmazonProductServiceApplication in 1.961 seconds (JVM running for 2.376)
+ 
+            18-Apr-2024 18:37:11,187 IST LEVEL= INFO CLASS=ProductController METHOD=getProducts LINE=38
+            THREAD_ID=[http-nio-8080-exec-1] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} Getting Products!
+ 
+            

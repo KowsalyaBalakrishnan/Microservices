@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1} - %m%n</Property>
+        <Property name="APP_LOG_ROOT">/Users/c2220081/Documents/Microservices/Logs</Property>
+        <Property name="APP_LOG_PATTERN">%d{dd-MMM-yyyy HH:mm:ss,SSS z} LEVEL=%5p CLASS=%C{1} METHOD=%M LINE=%L
+            THREAD_ID=[%t] %m%n %X{requestId}
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </Console>
+        <RollingFile name="appLog"
+                     fileName="${APP_LOG_ROOT}/amazonProductService.log"
+                     filePattern="${APP_LOG_ROOT}/amazonProductService-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${APP_LOG_PATTERN}" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="1 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="1" />
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.amazon.product" additivity="false">
+            <AppenderRef ref="appLog" />
+            <AppenderRef ref="Console" />
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="appLog" />
+        </Root>
+    </Loggers>
+
+</Configuration>

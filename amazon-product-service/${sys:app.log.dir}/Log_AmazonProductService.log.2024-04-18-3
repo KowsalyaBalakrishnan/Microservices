@@ -1,0 +1,10 @@
+18-Apr-2024 18:32:41,909 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} Starting AmazonProductServiceApplicationTests using Java 11.0.17 on AMBIN06040.local with PID 72126 (started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 
+            18-Apr-2024 18:32:41,913 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} No active profile set, falling back to 1 default profile: "default"
+ 
+            18-Apr-2024 18:32:43,690 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] app=OpenDNBE comp=opendnbe appEnv=${sys:app.env} Started AmazonProductServiceApplicationTests in 2.016 seconds (JVM running for 2.633)
+ 
+            
