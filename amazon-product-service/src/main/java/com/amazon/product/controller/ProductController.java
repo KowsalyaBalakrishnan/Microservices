@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.HttpServerErrorException;
+import org.springframework.web.client.RestClientException;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -69,8 +71,9 @@ public class ProductController {
     @ProductLogger
     public ResponseEntity<List<ProductPrice>> getProductsPrice(@RequestParam("pid") String productIds) {
         log.info("Received Product IDs => {}", productIds);
-        List<ProductPrice> productPrice = productService.getProductsById(productIds);
-        return new ResponseEntity<>(productPrice, HttpStatus.OK);
+        throw new RestClientException("SERVICE UNAVAILABLE");
+        /*List<ProductPrice> productPrice = productService.getProductsById(productIds);
+        return new ResponseEntity<>(productPrice, HttpStatus.OK);*/
     }
 
 

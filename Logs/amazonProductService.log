@@ -6545,4 +6545,508 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
             THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Controller Execution Completed
  2f1010ab-0258-4a02-a866-858df11a32ac20-Apr-2024 17:32:26,544 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
             THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Response Sent to Client
- 2f1010ab-0258-4a02-a866-858df11a32ac
+ 2f1010ab-0258-4a02-a866-858df11a32ac21-Apr-2024 08:15:38,016 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:16:45,467 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 44121 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 09:16:45,470 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 09:16:45,769 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 09:16:45,797 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 09:16:46,149 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 09:16:46,200 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 713 ms
+ 21-Apr-2024 09:16:46,290 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 09:16:46,321 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 09:16:46,410 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 09:16:46,682 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 09:16:46,986 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 09:16:46,991 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:16:47,224 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 09:16:47,416 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 09:16:47,421 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.239 seconds (JVM running for 2.622)
+ 21-Apr-2024 09:17:17,513 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:17:19,503 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 44380 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 09:17:19,506 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 09:17:19,772 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 09:17:19,796 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 09:17:20,136 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 09:17:20,187 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 662 ms
+ 21-Apr-2024 09:17:20,272 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 09:17:20,301 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 09:17:20,398 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 09:17:20,654 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 09:17:20,951 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 09:17:20,957 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:17:21,198 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 09:17:21,396 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 09:17:21,401 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.163 seconds (JVM running for 2.526)
+ 21-Apr-2024 09:18:09,311 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:18:11,277 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 44805 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 09:18:11,280 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 09:18:11,553 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 09:18:11,578 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 09:18:11,914 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 09:18:11,964 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 665 ms
+ 21-Apr-2024 09:18:12,055 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 09:18:12,081 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 09:18:12,167 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 09:18:12,415 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 09:18:12,708 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 09:18:12,713 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:18:12,948 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 09:18:13,131 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 09:18:13,136 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.123 seconds (JVM running for 2.479)
+ 21-Apr-2024 09:18:50,191 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 21-Apr-2024 09:18:50,192 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 0 ms
+ 21-Apr-2024 09:18:50,200 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:18:50,218 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 94e7992e-751d-40aa-82c0-adb2edcc1cc521-Apr-2024 09:18:50,223 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-1] Received Product IDs => 1,10
+ 94e7992e-751d-40aa-82c0-adb2edcc1cc521-Apr-2024 09:18:50,225 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 94e7992e-751d-40aa-82c0-adb2edcc1cc521-Apr-2024 09:18:50,228 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:18:50,256 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 401ab8f2-4487-4895-a285-a3f3d05d715e21-Apr-2024 09:18:50,256 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 401ab8f2-4487-4895-a285-a3f3d05d715e21-Apr-2024 09:21:49,506 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:21:49,509 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-2] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ cd414aa2-9f13-4a43-b55b-e9fe7c5780eb21-Apr-2024 09:21:49,510 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-2] Received Product IDs => 1,10
+ cd414aa2-9f13-4a43-b55b-e9fe7c5780eb21-Apr-2024 09:21:49,510 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ cd414aa2-9f13-4a43-b55b-e9fe7c5780eb21-Apr-2024 09:21:49,511 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:21:49,513 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ b7c96b01-7d88-4abe-81a8-3fbe9cae7b1021-Apr-2024 09:21:49,514 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ b7c96b01-7d88-4abe-81a8-3fbe9cae7b1021-Apr-2024 09:26:08,295 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:26:10,679 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 49480 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 09:26:10,683 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 09:26:10,969 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 09:26:10,997 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 09:26:11,354 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 09:26:11,407 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 705 ms
+ 21-Apr-2024 09:26:11,496 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 09:26:11,523 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 09:26:11,611 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 09:26:11,876 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 09:26:12,160 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 09:26:12,165 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 09:26:12,406 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 09:26:12,618 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 09:26:12,624 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.213 seconds (JVM running for 2.569)
+ 21-Apr-2024 09:26:20,188 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 21-Apr-2024 09:26:20,189 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 0 ms
+ 21-Apr-2024 09:26:20,200 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:26:20,218 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 9d370bb7-849e-4543-83de-526aa43a5f6a21-Apr-2024 09:26:20,223 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-1] Received Product IDs => 1
+ 9d370bb7-849e-4543-83de-526aa43a5f6a21-Apr-2024 09:26:20,224 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 9d370bb7-849e-4543-83de-526aa43a5f6a21-Apr-2024 09:26:20,228 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:26:20,259 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 5d91ace3-249b-44f8-b931-8e67a061b17721-Apr-2024 09:26:20,259 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 5d91ace3-249b-44f8-b931-8e67a061b17721-Apr-2024 09:47:16,479 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:47:16,482 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ 0f8f2d37-1933-4c15-b4a6-db72b4e076af21-Apr-2024 09:47:16,482 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ 0f8f2d37-1933-4c15-b4a6-db72b4e076af21-Apr-2024 09:47:16,483 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:47:16,486 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ 52c247f1-399e-48d2-bc8d-60dd8a47483d21-Apr-2024 09:47:16,486 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ 52c247f1-399e-48d2-bc8d-60dd8a47483d21-Apr-2024 09:47:16,874 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:47:16,876 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ bd5499e6-01ee-4333-bcc1-56f41cf6977c21-Apr-2024 09:47:16,876 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ bd5499e6-01ee-4333-bcc1-56f41cf6977c21-Apr-2024 09:47:16,880 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:47:16,881 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ c8143379-995e-45cb-941e-1611283d353621-Apr-2024 09:47:16,881 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ c8143379-995e-45cb-941e-1611283d353621-Apr-2024 09:47:17,681 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:47:17,682 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ 5612699e-fae8-44b9-a8fa-8e79acfaccad21-Apr-2024 09:47:17,683 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ 5612699e-fae8-44b9-a8fa-8e79acfaccad21-Apr-2024 09:47:17,683 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:47:17,692 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ e983bcf3-6435-4eaa-b962-3de1c3f2f87921-Apr-2024 09:47:17,693 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ e983bcf3-6435-4eaa-b962-3de1c3f2f87921-Apr-2024 09:52:05,420 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:05,427 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ ab8ce1a7-3889-48de-a936-6731a82b9a7b21-Apr-2024 09:52:05,430 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ ab8ce1a7-3889-48de-a936-6731a82b9a7b21-Apr-2024 09:52:05,432 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:05,437 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ ed099b76-7ab3-44b0-b54b-c48b14d4eb9c21-Apr-2024 09:52:05,438 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ ed099b76-7ab3-44b0-b54b-c48b14d4eb9c21-Apr-2024 09:52:05,833 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:05,834 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ d1e985c5-baf5-4503-815d-d34d06f9f04e21-Apr-2024 09:52:05,835 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ d1e985c5-baf5-4503-815d-d34d06f9f04e21-Apr-2024 09:52:05,836 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:05,837 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ a046611b-a6fe-4d72-b4f7-5f6e8d445dcb21-Apr-2024 09:52:05,837 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ a046611b-a6fe-4d72-b4f7-5f6e8d445dcb21-Apr-2024 09:52:06,227 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:06,234 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ d76f5030-9e6a-4174-aef0-782a4e63beaa21-Apr-2024 09:52:06,235 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ d76f5030-9e6a-4174-aef0-782a4e63beaa21-Apr-2024 09:52:06,236 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:06,243 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ ded28865-dbc6-4402-8370-42709f7feebb21-Apr-2024 09:52:06,243 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ ded28865-dbc6-4402-8370-42709f7feebb21-Apr-2024 09:52:06,630 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:06,631 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 225f7276-3933-47f4-884e-a9b7f36d9b6d21-Apr-2024 09:52:06,631 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 225f7276-3933-47f4-884e-a9b7f36d9b6d21-Apr-2024 09:52:06,632 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:06,634 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 00f60320-c7fa-4344-a0da-b21778107fd521-Apr-2024 09:52:06,635 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 00f60320-c7fa-4344-a0da-b21778107fd521-Apr-2024 09:52:07,034 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:07,037 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ 16baa586-e0b4-4977-b101-18a37e0b016221-Apr-2024 09:52:07,038 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ 16baa586-e0b4-4977-b101-18a37e0b016221-Apr-2024 09:52:07,040 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:07,051 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ 26a84dac-51e9-46cd-9875-e1af6ccbcdeb21-Apr-2024 09:52:07,051 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ 26a84dac-51e9-46cd-9875-e1af6ccbcdeb21-Apr-2024 09:52:07,439 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:07,441 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ a362cc5f-d8a4-40b6-91b9-4f8fa5fe5e9721-Apr-2024 09:52:07,445 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ a362cc5f-d8a4-40b6-91b9-4f8fa5fe5e9721-Apr-2024 09:52:07,447 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:07,450 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ bd9ebd3c-9223-4926-8d86-b746fe3314b121-Apr-2024 09:52:07,450 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ bd9ebd3c-9223-4926-8d86-b746fe3314b121-Apr-2024 09:52:07,836 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:07,837 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ b438fc3a-0a6e-4920-b86a-d0d60e94b00d21-Apr-2024 09:52:07,838 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ b438fc3a-0a6e-4920-b86a-d0d60e94b00d21-Apr-2024 09:52:07,839 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:07,841 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ d010c85f-1ec5-4320-9607-2e0fe18ef74721-Apr-2024 09:52:07,842 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ d010c85f-1ec5-4320-9607-2e0fe18ef74721-Apr-2024 09:52:08,240 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:08,241 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ cf4b4e93-9320-4b46-8469-be021feab09321-Apr-2024 09:52:08,243 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ cf4b4e93-9320-4b46-8469-be021feab09321-Apr-2024 09:52:08,246 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:08,249 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ 6261ffde-9dee-4f3a-b1e1-3e4c0b153e4521-Apr-2024 09:52:08,249 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ 6261ffde-9dee-4f3a-b1e1-3e4c0b153e4521-Apr-2024 09:52:08,639 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:08,648 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 993b7418-7233-4af9-a6f0-33fb7493758c21-Apr-2024 09:52:08,649 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 993b7418-7233-4af9-a6f0-33fb7493758c21-Apr-2024 09:52:08,650 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:08,651 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ d498784a-80d2-4d4b-a90a-fce75e1541aa21-Apr-2024 09:52:08,652 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ d498784a-80d2-4d4b-a90a-fce75e1541aa21-Apr-2024 09:52:09,044 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:09,049 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ bbc0c4d5-8cab-4472-8e60-2507c94cfbb221-Apr-2024 09:52:09,050 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ bbc0c4d5-8cab-4472-8e60-2507c94cfbb221-Apr-2024 09:52:09,052 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:09,057 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ 9b7102e3-c82f-467c-a5b4-06447fa5b43a21-Apr-2024 09:52:09,058 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ 9b7102e3-c82f-467c-a5b4-06447fa5b43a21-Apr-2024 09:52:09,465 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:09,466 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 490e6fbb-e360-4d27-978b-16f96176d51821-Apr-2024 09:52:09,467 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 490e6fbb-e360-4d27-978b-16f96176d51821-Apr-2024 09:52:09,468 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:09,472 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ aab81bfd-bf00-45e6-81d5-52935fbb406e21-Apr-2024 09:52:09,473 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ aab81bfd-bf00-45e6-81d5-52935fbb406e21-Apr-2024 09:52:09,862 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:09,864 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ a72f59a6-280e-464e-978e-830ea93f25f421-Apr-2024 09:52:09,865 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ a72f59a6-280e-464e-978e-830ea93f25f421-Apr-2024 09:52:09,867 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:09,872 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ f42422c1-8750-4397-abd7-9b54a1946a8421-Apr-2024 09:52:09,877 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ f42422c1-8750-4397-abd7-9b54a1946a8421-Apr-2024 09:52:10,268 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:10,273 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ fd5ceb67-3c82-4bde-9e7a-8a9cc323359a21-Apr-2024 09:52:10,274 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ fd5ceb67-3c82-4bde-9e7a-8a9cc323359a21-Apr-2024 09:52:10,277 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:10,281 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ 0412981f-c44e-488a-9663-e0155fa1e1ba21-Apr-2024 09:52:10,282 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ 0412981f-c44e-488a-9663-e0155fa1e1ba21-Apr-2024 09:52:10,672 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:10,677 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 1dfe0e84-5e14-4941-8359-48b3521df2b421-Apr-2024 09:52:10,678 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 1dfe0e84-5e14-4941-8359-48b3521df2b421-Apr-2024 09:52:10,679 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:10,681 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 526a0735-2c9c-4616-8f6b-601b49a0545221-Apr-2024 09:52:10,682 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 526a0735-2c9c-4616-8f6b-601b49a0545221-Apr-2024 09:52:11,069 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:11,070 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ 46887379-f74f-41e6-b85a-3e9996f896aa21-Apr-2024 09:52:11,071 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ 46887379-f74f-41e6-b85a-3e9996f896aa21-Apr-2024 09:52:11,073 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:11,076 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ 6b09368e-e00e-4467-8ca2-5de8d82521b021-Apr-2024 09:52:11,077 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ 6b09368e-e00e-4467-8ca2-5de8d82521b021-Apr-2024 09:52:11,465 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:11,466 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ fa6f9b79-3616-4e35-a438-29ba5458de1b21-Apr-2024 09:52:11,466 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ fa6f9b79-3616-4e35-a438-29ba5458de1b21-Apr-2024 09:52:11,467 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:11,468 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 22c865d9-a91f-4509-932e-684a46d86e8d21-Apr-2024 09:52:11,469 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 22c865d9-a91f-4509-932e-684a46d86e8d21-Apr-2024 09:52:11,865 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:11,867 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ 3f0a33d7-16c9-43c1-9b84-7e9c45b54f3f21-Apr-2024 09:52:11,868 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ 3f0a33d7-16c9-43c1-9b84-7e9c45b54f3f21-Apr-2024 09:52:11,869 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:11,871 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ 2361f86f-117a-42ef-977e-d5e7efd370b521-Apr-2024 09:52:11,871 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ 2361f86f-117a-42ef-977e-d5e7efd370b521-Apr-2024 09:52:12,267 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:12,272 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ 02dcfd63-d0d7-400f-8aa3-fc8dfe4a864921-Apr-2024 09:52:12,273 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ 02dcfd63-d0d7-400f-8aa3-fc8dfe4a864921-Apr-2024 09:52:12,276 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:12,279 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ 8cd9e541-275d-4458-a545-6f449fabc61e21-Apr-2024 09:52:12,279 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ 8cd9e541-275d-4458-a545-6f449fabc61e21-Apr-2024 09:52:12,688 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:12,690 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ b6802d2c-eb03-43bf-a263-b1707c9a338621-Apr-2024 09:52:12,691 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ b6802d2c-eb03-43bf-a263-b1707c9a338621-Apr-2024 09:52:12,692 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:12,693 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 276a3d7f-837a-4d50-adda-51113c08c16421-Apr-2024 09:52:12,694 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 276a3d7f-837a-4d50-adda-51113c08c16421-Apr-2024 09:52:13,087 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:13,096 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ d2ccc719-7f77-46b6-93ce-f19f2c281fb721-Apr-2024 09:52:13,097 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ d2ccc719-7f77-46b6-93ce-f19f2c281fb721-Apr-2024 09:52:13,098 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:13,100 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Controller Execution Completed
+ 7863bafc-66c3-4b6b-b50a-5ac30194417e21-Apr-2024 09:52:13,100 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-9] ProductInterceptor => Response Sent to Client
+ 7863bafc-66c3-4b6b-b50a-5ac30194417e21-Apr-2024 09:52:13,505 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:13,511 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 7b30835f-db5e-41b6-849d-a06412d04b9e21-Apr-2024 09:52:13,512 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 7b30835f-db5e-41b6-849d-a06412d04b9e21-Apr-2024 09:52:13,517 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:13,518 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 0d324bde-77b7-4d06-968f-8345175bd40b21-Apr-2024 09:52:13,518 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 0d324bde-77b7-4d06-968f-8345175bd40b21-Apr-2024 09:52:13,915 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:13,921 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ 5a01d37d-8cc0-4b6a-aae5-a34203c0253a21-Apr-2024 09:52:13,925 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ 5a01d37d-8cc0-4b6a-aae5-a34203c0253a21-Apr-2024 09:52:13,928 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:13,930 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ e8836888-845b-44e9-b93b-2df7f730624121-Apr-2024 09:52:13,930 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ e8836888-845b-44e9-b93b-2df7f730624121-Apr-2024 09:52:14,327 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:14,332 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ cf005771-b3fe-4ce0-8763-79295eb53ed521-Apr-2024 09:52:14,333 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ cf005771-b3fe-4ce0-8763-79295eb53ed521-Apr-2024 09:52:14,335 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:14,340 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ fb2fc0df-d40a-4cce-8114-382ca302488621-Apr-2024 09:52:14,340 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ fb2fc0df-d40a-4cce-8114-382ca302488621-Apr-2024 09:52:14,733 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:14,740 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 1a1973ef-6c58-4548-841d-93140bccded421-Apr-2024 09:52:14,741 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 1a1973ef-6c58-4548-841d-93140bccded421-Apr-2024 09:52:14,744 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 09:52:14,747 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Controller Execution Completed
+ 1da7930d-2e98-4b64-b589-0975d3e025ce21-Apr-2024 09:52:14,748 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
+ 1da7930d-2e98-4b64-b589-0975d3e025ce21-Apr-2024 10:00:26,768 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 
