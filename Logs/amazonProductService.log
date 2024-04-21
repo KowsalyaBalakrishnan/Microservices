@@ -7049,4 +7049,292 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
             THREAD_ID=[http-nio-8080-exec-7] ProductInterceptor => Response Sent to Client
  1da7930d-2e98-4b64-b589-0975d3e025ce21-Apr-2024 10:00:26,768 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
             THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:27:15,194 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 46013 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 11:27:15,198 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 11:27:15,514 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 11:27:15,548 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 11:27:15,899 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 11:27:15,965 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 749 ms
+ 21-Apr-2024 11:27:16,052 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 11:27:16,079 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 11:27:16,170 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 11:27:16,444 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 11:27:16,752 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 11:27:16,757 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:27:17,011 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 11:27:17,210 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 11:27:17,216 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.32 seconds (JVM running for 2.721)
+ 21-Apr-2024 11:27:36,466 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:27:38,410 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 46044 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 11:27:38,414 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 11:27:38,695 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 11:27:38,719 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 11:27:39,077 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 11:27:39,126 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 695 ms
+ 21-Apr-2024 11:27:39,213 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 11:27:39,238 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 11:27:39,331 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 11:27:39,564 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 11:27:39,850 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 11:27:39,856 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:27:40,093 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 11:27:40,301 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 11:27:40,306 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.17 seconds (JVM running for 2.535)
+ 21-Apr-2024 11:27:51,532 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 21-Apr-2024 11:27:51,533 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 21-Apr-2024 11:27:51,540 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:27:51,556 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ ee4361ef-f4fa-4f4e-b8aa-b47de2f6d25121-Apr-2024 11:27:51,560 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-1] Received Product IDs => 1,10
+ ee4361ef-f4fa-4f4e-b8aa-b47de2f6d25121-Apr-2024 11:27:51,617 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=112
+            THREAD_ID=[http-nio-8080-exec-1] Retrieved 2 Products Price
+ ee4361ef-f4fa-4f4e-b8aa-b47de2f6d25121-Apr-2024 11:27:51,623 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 63
+ ee4361ef-f4fa-4f4e-b8aa-b47de2f6d25121-Apr-2024 11:27:51,656 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ ee4361ef-f4fa-4f4e-b8aa-b47de2f6d25121-Apr-2024 11:27:51,656 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ ee4361ef-f4fa-4f4e-b8aa-b47de2f6d25121-Apr-2024 11:29:20,456 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:30:06,402 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 46358 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 11:30:06,407 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 11:30:06,712 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 11:30:06,743 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 11:30:07,156 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 11:30:07,214 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 785 ms
+ 21-Apr-2024 11:30:07,319 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 11:30:07,350 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 11:30:07,439 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 11:30:07,697 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 11:30:07,995 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 11:30:08,003 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:30:08,268 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 11:30:08,482 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 11:30:08,487 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.373 seconds (JVM running for 2.744)
+ 21-Apr-2024 11:30:19,210 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+ 21-Apr-2024 11:30:19,211 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-2] Completed initialization in 1 ms
+ 21-Apr-2024 11:30:19,219 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:30:19,237 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-2] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 8773f62d-f2cc-43fc-8320-47558000d05f21-Apr-2024 11:30:19,242 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-2] Received Product IDs => 1,10
+ 8773f62d-f2cc-43fc-8320-47558000d05f21-Apr-2024 11:30:19,297 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=113
+            THREAD_ID=[http-nio-8080-exec-2] Retrieved 2 Products Price
+ 8773f62d-f2cc-43fc-8320-47558000d05f21-Apr-2024 11:30:19,304 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-2] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 64
+ 8773f62d-f2cc-43fc-8320-47558000d05f21-Apr-2024 11:30:19,345 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ 8773f62d-f2cc-43fc-8320-47558000d05f21-Apr-2024 11:30:19,346 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ 8773f62d-f2cc-43fc-8320-47558000d05f21-Apr-2024 11:30:31,606 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:30:31,608 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 141aa8b4-d571-422d-b855-82b61fde275421-Apr-2024 11:30:31,609 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-1] Received Product IDs => 1,10
+ 141aa8b4-d571-422d-b855-82b61fde275421-Apr-2024 11:30:31,614 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 6
+ 141aa8b4-d571-422d-b855-82b61fde275421-Apr-2024 11:30:31,617 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 141aa8b4-d571-422d-b855-82b61fde275421-Apr-2024 11:30:31,617 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 141aa8b4-d571-422d-b855-82b61fde275421-Apr-2024 11:30:49,694 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:30:49,696 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-3] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 03099f70-0a84-4ea4-9e09-871a7288efcc21-Apr-2024 11:30:49,697 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-3] Received Product IDs => 1,10
+ 03099f70-0a84-4ea4-9e09-871a7288efcc21-Apr-2024 11:30:49,704 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=113
+            THREAD_ID=[http-nio-8080-exec-3] Retrieved 2 Products Price
+ 03099f70-0a84-4ea4-9e09-871a7288efcc21-Apr-2024 11:30:49,705 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-3] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 8
+ 03099f70-0a84-4ea4-9e09-871a7288efcc21-Apr-2024 11:30:49,707 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ 03099f70-0a84-4ea4-9e09-871a7288efcc21-Apr-2024 11:30:49,707 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ 03099f70-0a84-4ea4-9e09-871a7288efcc21-Apr-2024 11:30:50,726 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:30:50,728 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-4] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 2f394197-01af-47fe-8bb1-344c23563c5f21-Apr-2024 11:30:50,729 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-4] Received Product IDs => 1,10
+ 2f394197-01af-47fe-8bb1-344c23563c5f21-Apr-2024 11:30:50,729 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-4] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 0
+ 2f394197-01af-47fe-8bb1-344c23563c5f21-Apr-2024 11:30:50,731 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Controller Execution Completed
+ 2f394197-01af-47fe-8bb1-344c23563c5f21-Apr-2024 11:30:50,732 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Response Sent to Client
+ 2f394197-01af-47fe-8bb1-344c23563c5f21-Apr-2024 11:30:59,803 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:30:59,805 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-5] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 835ba839-2ed2-426e-a2a5-0bfc054a812e21-Apr-2024 11:30:59,805 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-5] Received Product IDs => 7,19
+ 835ba839-2ed2-426e-a2a5-0bfc054a812e21-Apr-2024 11:30:59,813 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=113
+            THREAD_ID=[http-nio-8080-exec-5] Retrieved 2 Products Price
+ 835ba839-2ed2-426e-a2a5-0bfc054a812e21-Apr-2024 11:30:59,814 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-5] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 9
+ 835ba839-2ed2-426e-a2a5-0bfc054a812e21-Apr-2024 11:30:59,816 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Controller Execution Completed
+ 835ba839-2ed2-426e-a2a5-0bfc054a812e21-Apr-2024 11:30:59,816 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-5] ProductInterceptor => Response Sent to Client
+ 835ba839-2ed2-426e-a2a5-0bfc054a812e21-Apr-2024 11:31:03,747 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:31:03,748 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-6] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ afcca3a2-22f0-46a1-a3be-32aa2642c21021-Apr-2024 11:31:03,748 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-6] Received Product IDs => 7,19
+ afcca3a2-22f0-46a1-a3be-32aa2642c21021-Apr-2024 11:31:03,749 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-6] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 1
+ afcca3a2-22f0-46a1-a3be-32aa2642c21021-Apr-2024 11:31:03,751 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Controller Execution Completed
+ afcca3a2-22f0-46a1-a3be-32aa2642c21021-Apr-2024 11:31:03,752 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-6] ProductInterceptor => Response Sent to Client
+ afcca3a2-22f0-46a1-a3be-32aa2642c21021-Apr-2024 11:31:18,309 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:31:54,501 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarting LINE=55
+            THREAD_ID=[main] Starting AmazonProductServiceApplication using Java 11.0.17 on AMBIN06040.local with PID 47052 (/Users/c2220081/Documents/Microservices/amazon-product-service/target/classes started by c2220081 in /Users/c2220081/Documents/Microservices/amazon-product-service)
+ 21-Apr-2024 11:31:54,505 IST LEVEL= INFO CLASS=SpringApplication METHOD=logStartupProfileInfo LINE=632
+            THREAD_ID=[main] No active profile set, falling back to 1 default profile: "default"
+ 21-Apr-2024 11:31:54,813 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=132
+            THREAD_ID=[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 21-Apr-2024 11:31:54,841 IST LEVEL= INFO CLASS=RepositoryConfigurationDelegate METHOD=registerRepositoriesIn LINE=201
+            THREAD_ID=[main] Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+ 21-Apr-2024 11:31:55,209 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=initialize LINE=108
+            THREAD_ID=[main] Tomcat initialized with port(s): 8080 (http)
+ 21-Apr-2024 11:31:55,268 IST LEVEL= INFO CLASS=ServletWebServerApplicationContext METHOD=prepareWebApplicationContext LINE=292
+            THREAD_ID=[main] Root WebApplicationContext: initialization completed in 740 ms
+ 21-Apr-2024 11:31:55,359 IST LEVEL= INFO CLASS=LogHelper METHOD=logPersistenceUnitInformation LINE=31
+            THREAD_ID=[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+ 21-Apr-2024 11:31:55,387 IST LEVEL= INFO CLASS=Version METHOD=logVersion LINE=44
+            THREAD_ID=[main] HHH000412: Hibernate ORM core version 5.6.15.Final
+ 21-Apr-2024 11:31:55,487 IST LEVEL= INFO CLASS=JavaReflectionManager METHOD=<clinit> LINE=56
+            THREAD_ID=[main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 21-Apr-2024 11:31:55,735 IST LEVEL= INFO CLASS=Dialect METHOD=<init> LINE=175
+            THREAD_ID=[main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+ 21-Apr-2024 11:31:56,061 IST LEVEL= INFO CLASS=JtaPlatformInitiator METHOD=initiateService LINE=52
+            THREAD_ID=[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 21-Apr-2024 11:31:56,067 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=buildNativeEntityManagerFactory LINE=437
+            THREAD_ID=[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 21-Apr-2024 11:31:56,342 IST LEVEL= WARN CLASS=JpaBaseConfiguration$JpaWebConfiguration METHOD=openEntityManagerInViewInterceptor LINE=223
+            THREAD_ID=[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ 21-Apr-2024 11:31:56,555 IST LEVEL= INFO CLASS=TomcatWebServer METHOD=start LINE=220
+            THREAD_ID=[main] Tomcat started on port(s): 8080 (http) with context path ''
+ 21-Apr-2024 11:31:56,561 IST LEVEL= INFO CLASS=StartupInfoLogger METHOD=logStarted LINE=61
+            THREAD_ID=[main] Started AmazonProductServiceApplication in 2.333 seconds (JVM running for 2.705)
+ 21-Apr-2024 11:32:13,441 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=525
+            THREAD_ID=[http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+ 21-Apr-2024 11:32:13,442 IST LEVEL= INFO CLASS=FrameworkServlet METHOD=initServletBean LINE=547
+            THREAD_ID=[http-nio-8080-exec-1] Completed initialization in 1 ms
+ 21-Apr-2024 11:32:13,449 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:32:13,464 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-1] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:13,468 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-1] Received Product IDs => 7,19
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:13,472 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=103
+            THREAD_ID=[http-nio-8080-exec-1] Retrieving Products By ID for Price!!!
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:13,521 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=114
+            THREAD_ID=[http-nio-8080-exec-1] Retrieved 2 Products Price
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:13,528 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-1] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 61
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:13,565 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Controller Execution Completed
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:13,566 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-1] ProductInterceptor => Response Sent to Client
+ 4596fe78-5acf-413c-944c-f12d1729701c21-Apr-2024 11:32:25,634 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:32:25,634 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-2] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 6c03ba89-b889-462f-b45c-6102713561ed21-Apr-2024 11:32:25,634 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-2] Received Product IDs => 7,19
+ 6c03ba89-b889-462f-b45c-6102713561ed21-Apr-2024 11:32:25,637 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-2] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 3
+ 6c03ba89-b889-462f-b45c-6102713561ed21-Apr-2024 11:32:25,638 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Controller Execution Completed
+ 6c03ba89-b889-462f-b45c-6102713561ed21-Apr-2024 11:32:25,638 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-2] ProductInterceptor => Response Sent to Client
+ 6c03ba89-b889-462f-b45c-6102713561ed21-Apr-2024 11:32:45,255 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:32:45,257 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-3] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:45,258 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-3] Received Product IDs => 11,21
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:45,258 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=103
+            THREAD_ID=[http-nio-8080-exec-3] Retrieving Products By ID for Price!!!
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:45,264 IST LEVEL= INFO CLASS=ProductService METHOD=getProductsById LINE=114
+            THREAD_ID=[http-nio-8080-exec-3] Retrieved 2 Products Price
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:45,264 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-3] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 6
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:45,266 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Controller Execution Completed
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:45,267 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-3] ProductInterceptor => Response Sent to Client
+ 707c2a80-1d88-4ae0-a660-ac22fb09972721-Apr-2024 11:32:55,379 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=preHandle LINE=22
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Adding Interceptor
+ 21-Apr-2024 11:32:55,380 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=18
+            THREAD_ID=[http-nio-8080-exec-4] Before Method Invocation => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String)
+ 60f58653-82b2-4215-84c8-385be36b60a321-Apr-2024 11:32:55,381 IST LEVEL= INFO CLASS=ProductController METHOD=getProductsPrice LINE=73
+            THREAD_ID=[http-nio-8080-exec-4] Received Product IDs => 11,21
+ 60f58653-82b2-4215-84c8-385be36b60a321-Apr-2024 11:32:55,381 IST LEVEL= INFO CLASS=AOPConfiguration METHOD=addThreadContext LINE=27
+            THREAD_ID=[http-nio-8080-exec-4] Total Time => Method Execution => ResponseEntity com.amazon.product.controller.ProductController.getProductsPrice(String) took => 1
+ 60f58653-82b2-4215-84c8-385be36b60a321-Apr-2024 11:32:55,382 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=postHandle LINE=31
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Controller Execution Completed
+ 60f58653-82b2-4215-84c8-385be36b60a321-Apr-2024 11:32:55,383 IST LEVEL= INFO CLASS=ProductInterceptor METHOD=afterCompletion LINE=36
+            THREAD_ID=[http-nio-8080-exec-4] ProductInterceptor => Response Sent to Client
+ 60f58653-82b2-4215-84c8-385be36b60a321-Apr-2024 11:33:02,333 IST LEVEL= INFO CLASS=AbstractEntityManagerFactoryBean METHOD=destroy LINE=651
+            THREAD_ID=[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
  

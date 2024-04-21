@@ -23,7 +23,7 @@ public class CaffeineCacheConfig {
 
     private Cache<Object, Object> cacheBuilder() {
         return Caffeine.newBuilder()
-                .maximumSize(25)
+                .maximumSize(50)
                 .expireAfterAccess(15, TimeUnit.SECONDS)
                 .initialCapacity(10)
                 .build();

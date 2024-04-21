@@ -98,7 +98,9 @@ public class ProductService {
                 .build();
     }
 
+    @Cacheable(value = "allProducts")
     public List<ProductPrice> getProductsById(String productIds) {
+        log.info("Retrieving Products By ID for Price!!!");
         List<ProductPrice> productPrices = new ArrayList<>();
         String[] products = productIds.split(",");
 

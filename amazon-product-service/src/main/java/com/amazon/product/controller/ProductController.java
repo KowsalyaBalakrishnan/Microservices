@@ -47,8 +47,8 @@ public class ProductController {
     @GetMapping("/products")
     @ProductLogger
     public ResponseEntity<Map<String, Object>> getProducts(HttpServletRequest request,
-                                                             @RequestParam(defaultValue = "10") String countInEachPage,
-                                                             @RequestParam String pageNumber) {
+                                                           @RequestParam(defaultValue = "10") String countInEachPage,
+                                                           @RequestParam String pageNumber) {
         log.info("ThreadContextID => {}", request.getAttribute("threadContextId").toString());
         Map<String, Object> products = productService.getProducts(pageNumber, countInEachPage);
         return ResponseEntity.ok(products);
@@ -71,9 +71,9 @@ public class ProductController {
     @ProductLogger
     public ResponseEntity<List<ProductPrice>> getProductsPrice(@RequestParam("pid") String productIds) {
         log.info("Received Product IDs => {}", productIds);
-        throw new RestClientException("SERVICE UNAVAILABLE");
-        /*List<ProductPrice> productPrice = productService.getProductsById(productIds);
-        return new ResponseEntity<>(productPrice, HttpStatus.OK);*/
+        // throw new RestClientException("SERVICE UNAVAILABLE");
+        List<ProductPrice> productPrice = productService.getProductsById(productIds);
+        return new ResponseEntity<>(productPrice, HttpStatus.OK);
     }
 
 
